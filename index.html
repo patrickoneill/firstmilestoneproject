@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+
+
+    <title>Milestone Project</title>
+</head>
+
+<body>
+    <!-- Heading for Website -->
+    <header class="container-fluid bg-color-logo">
+        <div class="row  logo-heading">
+            <a href="index.html logo">
+                <div class="col-md-6 logo"></div>
+            </a>
+            <!-- Login for website -->
+            <div class="col-md-3 bg-color-header-log section-column">
+                <div class="row">
+                    <h2 class="user">Already have an account?</h2>
+                    <form class="login">
+                        <div class="input-group uppercase">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="text" class="form-control" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <button class="btn btn-success">Click To Login</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Sign up for the web page -->
+            <div class="col-md-3 bg-color-header-signin section-column-2 ">
+                <h3 class="create-account">Create An Account
+                    <p class="small">First Delivery Free...</p>
+                </h3>
+                <button class="btn btn-danger">Sign up</button>
+            </div>
+        </div>
+
+        <!-- navigation -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid navbar-section">
+                <div class="navbar-header">
+                    <a class="navbar-name" href="index.html">O'Neill Fruit & Veg</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <!-- NAv bar links with dropdown on one for product list links -->
+                    <li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/">Fruit</a></li>
+                                <li><a href="/">Vegetable's</a></li>
+                                <li><a href="/">Potatoe's</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                    <li><a href="/">Contact</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Sign Up</a></li>
+                </ul>
+                <!--Searchbar -->
+                <form class="navbar-form navbar-right" action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Search</button>
+                </form>
+
+                <!--Glyphicon icons should monly be for mobile -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid">
+        <div class="row bg-color-section-heading">
+            <h1 class="title">Welcome to O'Neill's Fruit & Veg</h1>
+            <h2 class="plan">We Specilise In Fresh </h2>
+            <div class="container jumbo">
+                <div class="jumbotron jumbo-img">
+                    <a href="hamper"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="footer-info">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h5 class="uppercase general-sub"> Contact us:
+                        <hr/>
+                    </h5>
+                    <p class="inline-block">
+                        Email:
+                        Phone:
+                    </p>
+
+                </div>
+                <div class="col-sm-5">
+                    <h5 class="uppercase general-sub">Order
+                        <hr/>
+                    </h5>
+                    <p class="inline-block">
+                        Need a printable version of Order Records? Download it here.
+                        <a href="#" target="_blank" class="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+                <div class="col-sm-2">
+                    <h5 class="uppercase general-sub">My Social
+                        <hr/>
+                    </h5>
+                    <ul class="list-inline social-links">
+                        <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+
+    </footer>
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Java link from Bootstrap --->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
