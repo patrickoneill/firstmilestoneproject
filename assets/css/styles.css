@@ -3,11 +3,11 @@
 /*------------------------ bg-color */
 
 .bg-color-logo {
-    background-color: #fafafa;
+    background-color: #0a630a;
 }
 
 .bg-color-header-log {
-    background-color: #fafafa;
+    background-color: #0a630a;
 }
 
 .bg-color-section-heading {
@@ -26,48 +26,47 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 210px;
-    transition: all 5s ease-in-out;
-    -moz-transition: all 5s ease-in-out;
-    -webkit-transition: all 5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
     border-radius: 50%;
 }
 
 .input-group {
     text-align: justify;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 3px;
+    padding: 5px;
 }
 
 .section-column {
     text-align: center;
+    margin-top: 0;
 }
 
 .section-column-2 {
     text-align: center;
+    margin-top: 15px;
 }
 
 .create-account {
-    padding-bottom: 20px;
+    padding-top: 13px;
+    margin: 5px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     padding-top: 20px;
     padding-bottom: 5px;
 }
 
 /*------------------------ Navbar */
 
-.navbar-default {
+.navbar-inverse {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-a.navbar-name {
-    padding-right: 10px;
-    margin-bottom: 0;
-    padding-top: 25px;
-}
+
 
 /*------------------------ section */
 
@@ -85,10 +84,14 @@ a.navbar-name {
     background-repeat: no-repeat;
     background-size: 75%;
     background-position: center;
+}
+
+.form1 {
+    margin-top: 18px;
+    margin-bottom: 25px;
+    padding-top: inherit;
     
-
-
-
+    
 }
 
 
@@ -97,10 +100,11 @@ a.navbar-name {
 
 .btn-success {
     position: relative;
+    margin-top: 5px;
     padding: 5px;
 }
 
-.btn-danger {
+.btn-info {
     position: relative;
     margin: 4px;
     padding: 5px;
@@ -110,18 +114,28 @@ a.navbar-name {
 
 /*------------------------ footer */
 
+footer {
+    border-radius: 0 0 20px 20px;
+}
+
 hr {
     margin-top: 5px;
     margin-bottom: 5px;
-    border-top: 2px solid #c18515;
+    border-top: 2px solid #e18515;
 }
 
-.general-sub {
+.general-sub i{
     margin-top: 5px;
-    color: #c18515;
+    color: #e18515;
 }
 
-.social-links li i {
+.contact-sub,
+.order-sub {
+    color: #e18515;
+}
+
+.social-links li i,
+.order-sub i {
     width: 30px;
     height: 30px;
     margin: 0;
@@ -138,12 +152,13 @@ hr {
     -o-transition: all 0.35s ease-in-out;
 }
 
-.social-links li i:hover {
+.social-links li i:hover,
+.order-sub i:hover {
     background-color: #7a540d;
 }
 
 footer {
-    background-color: green;
+    background-color: #0a630a;
 }
 
 /*------------------------ font*/
@@ -156,17 +171,23 @@ footer {
     font-family: "Exo", sans-serif;
     font-size: 20px;
     text-align: center;
+    padding: 10px;
+    color: #e18515;
 }
 
 .create-account {
     font-family: "Exo", sans-serif;
     font-size: 40px;
+    font-weight: 800;
     text-align: center;
+    color: #e18515;
 }
 
-.navbar-name {
+.navbar-inverse {
     font-family: "Exo", sans-serif;
     font-weight: 300;
+    text-decoration: none;
+    
 }
 
 .title, .plan {
@@ -179,9 +200,10 @@ footer {
 
 .general-sub {
     font-family: "Exo", sans-serif;
-    font-weight: 200;
+    font-weight: 600;
     font-size: medium;
     font-variant: small-caps;
+    color: #e18515;
 }
 
 /*------------------------ */
