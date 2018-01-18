@@ -67,8 +67,22 @@ h1, h2, h3 {
 }
 
 
+/*------------------------ alerts */
+
+.alert-danger {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 5px;
+    text-align: center;
+}
+
 
 /*------------------------ section */
+
+section {
+    padding-bottom: 30px;
+}
+
 
 .jumbo {
     border:20px;
@@ -90,10 +104,40 @@ h1, h2, h3 {
     margin-top: 18px;
     margin-bottom: 25px;
     padding-top: inherit;
-    
-    
 }
 
+.order-section {
+    display: inline-grid;
+    margin-top: 25px;
+}
+
+table {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    background-color: #fff
+}
+
+.catagory {
+    width: 600px;
+    height: 35px;
+}
+
+.supermarket {
+    float: right;
+}
+
+.supermarket span {
+    color: red;
+}
+
+.radio-selection {
+    float: right;
+    margin-right: 10px;
+}
 
 
 /*------------------------ buttons*/
@@ -110,6 +154,31 @@ h1, h2, h3 {
     padding: 5px;
 }
 
+.btn-danger {
+    float: right;
+    margin-bottom: 15px;
+    margin-right:120px;
+    
+}
+
+.button-fruit,
+.button-veg,
+.button-potatoes,
+.button-specials {
+    border-radius: 20px;
+    background-color: #e18515;
+    color: #000;
+    text-shadow: none;
+}
+
+.button-fruit:hover,
+.button-veg:hover,
+.button-potatoes:hover,
+.button-specials:hover {
+    border-radius: 20px;
+    background-color: #7a540d;
+    color: #fff;
+}
 
 
 /*------------------------ footer */
@@ -204,6 +273,14 @@ footer {
     font-size: medium;
     font-variant: small-caps;
     color: #e18515;
+}
+
+table {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    font-style: oblique;
+    font-variant: small-caps;
+    text-indent: 10px;
 }
 
 /*------------------------ */
