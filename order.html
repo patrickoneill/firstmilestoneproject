@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 
-    <title>Oreders</title>
+    <title>Orders</title>
 </head>
 
 <body>
@@ -50,8 +51,6 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand uppercase" href="index.html">O'Neill's Fruit & Veg </a>
-
-
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -73,13 +72,7 @@
                             <input class="seacrhbar" type="text" placeholder="Search..">
                         </div>
                     </form>
-
-
-
-
-
                 </div>
-            </div>
             </div>
         </nav>
 
@@ -87,10 +80,14 @@
     </header>
 
     <section class="container-fluid bg-color-section-heading">
-    <!-- alert to special offers or requirements -->
+        <!-- alert to special offers or requirements -->
         <div class="alert alert-danger">
             <strong>Important!</strong> All orders must be placed before 10:30am for same day delivery.
         </div>
+        <div>
+            <button class="btn btn-danger uppercase ">Submit Order</button>
+        </div>
+
 
         <!-- collapsable order screens -->
         <div class="container">
@@ -1294,12 +1291,35 @@
             </div>
         </div>
 
-        <button class="btn btn-danger uppercase ">Submit Order</button>
 
-        <div class="container-fluid">
-            <div class="row col-md-6"></div>
-            <div class="row col-md-6"></div>
+        <div class="container ">
+            <div class="row col-md-5 newLines">
+                <h2>Deliveries</h2>
+                <p class="new">Deliveries are bases on distance outside the city center</p>
+                <ul style="list-style-type:circle">
+                    <li> deliveries in the city center €5</li>
+                    <li> deliveries 5k-10k outside city center €9.50</li>
+                    <li> deliveries outside Dublin €15</li>
+                </ul>
+                <input type="text" name="eircode" placeholder="Enter Eircode"/>
+                <button class="eircode">Find</button>
+
+            </div>
+            <div class="googleMap col-md-5 hidden-xs" id="map"></div>
+
+            <script>
+                function myMap() {
+                    var mapOptions = {
+                        center: new google.maps.LatLng(53.351599, -6.332696),
+                        zoom: 10,
+                        mapTypeId: google.maps.MapTypeId.HYBRID
+                    }
+                    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8UbuB1m2r3G4ZQ5SirWFH9HqVOZyqeJ0&callback=myMap"></script>
         </div>
+
     </section>
 
     <footer class="container-fluid">
@@ -1344,8 +1364,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Java link from Bootstrap --->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
 
 
 </body>

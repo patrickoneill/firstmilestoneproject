@@ -15,6 +15,10 @@
     background-color: #bad4ff;
 }
 
+footer {
+    background-color: #0a630a;
+}
+
 
 
 /*------------------------ heading */
@@ -69,10 +73,13 @@ h3 {
     margin-bottom: 10px;
 }
 
+
 .navbar-right {
     line-height: inherit;
     margin-top: 12px;
 }
+
+
 
 /*------------------------ alerts */
 
@@ -87,7 +94,7 @@ h3 {
 /*------------------------ section */
 
 .form1 {
-    margin-top: 18px;
+    margin-top: 19px;
     margin-bottom: 25px;
     padding-top: inherit;
 }
@@ -127,6 +134,26 @@ td {
     margin-right: 10px;
 }
 
+.newLines {
+    margin-left: 40px;
+}
+
+
+.contactIcon span {
+    font-size: 50px;
+    color: #e18515;
+    margin-left: 25%;
+    float: right;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+
+
+
+
+
 
 /*------------------------ buttons*/
 
@@ -143,10 +170,9 @@ td {
 }
 
 .btn-danger {
-    float: right;
-    margin-bottom: 15px;
-    margin-right: 120px;
-
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 40%;
 }
 
 .button-fruit,
@@ -156,7 +182,6 @@ td {
     border-radius: 20px;
     background-color: #e18515;
     color: #000;
-    text-shadow: none;
 }
 
 .button-fruit:hover,
@@ -168,6 +193,9 @@ td {
     color: #fff;
 }
 
+.button-specials {
+    margin-bottom: 20px;
+}
 
 /*------------------------ footer */
 
@@ -214,9 +242,7 @@ hr {
     background-color: #7a540d;
 }
 
-footer {
-    background-color: #0a630a;
-}
+
 
 /*------------------------ font*/
 
@@ -287,4 +313,28 @@ table {
 
 
 
-/*------------------------ */
+
+/*------------------------ google map */
+
+.eircode {
+    margin-bottom: 20px;
+}
+
+.googleMap {
+    width: 500px;
+    height: 350px;
+    margin: 20px;
+}
+
+.googleMap2 {
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+}
+
+@media (max-width:767px) {
+    googleMap {
+        width: 200px;
+        height: 150px;
+    }
+}
