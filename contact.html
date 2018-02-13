@@ -65,7 +65,6 @@
                         <li><a href="contact.html">Contact </a></li>
                         <li><a href="about.html">About Us </a></li>
                     </ul>
-
                     <form class="navbar-form navbar-right" role="search">
                         <div class="form-group">
                             <input class="seacrhbar" type="text" placeholder="Search..">
@@ -79,54 +78,65 @@
     </header>
 
     <section class="container-fluid bg-color-section-heading">
-
-        <div class="row col-md-12">
-            <h1 class="plan">O'Neill's Fruit & Veg</h1>
-            <h2 class="plan">How to get in touch</h2>
+        <div class="row col-md-12 plan">
+            <h1>Contact Us @</h1>
+            <h2>We're here to help</h2>
         </div>
-        <div class="container-fluid col-md-12">
-            <div class="col-md-6 contactIcon"><span class="glyphicon glyphicon-earphone" aria-hidden="true">...</span></div>
-            <div class="col-md-6">
-                <ul>
-                    <li>01-5151555</li>
-                    <li>01-5151556</li>
-                    <li>01-5151557</li>
-                </ul>
-            </div>
-            <div class="container col-md-6 contactIcon"><span class="glyphicon glyphicon-envelope" aria-hidden="true">...</span></div>
-            <div class="col-md-6">
-                <ul>
-                    <li>oneillf&v1@google.com</li>
-                    <li>oneillf&v2@google.com</li>
-                </ul>
-            </div>
-            <div class="container col-md-6 contactIcon"><span class="glyphicon glyphicon-time" aria-hidden="true">...</span></div>
-            <div class="col-md-6">
-                <ol style="list-style-type:disc">
-                    <li>Monday-Thursday</li>
-                    <li>Friday</li>
-                    <li>Saturday</li>
-                    <li>Sunday-Bank Holidays</li>
-                </ol>
-            </div>
-            <div class="container col-md-6 contactIcon"><span class="glyphicon glyphicon-map-marker" aria-hidden="true">...</span></div>
-            <div class="col-md-6">
-                <div class="googleMap2" id="map"></div>
+        <div class="container col-md-12 contact-page">
+            <div class="row col-md-5 col-sm-5 contact-icon"><span class="glyphicon glyphicon-earphone">...</span></div>
+            <div class="row col-md-5 col-sm-5 contact-list">
 
-                <script>
-                    function myMap() {
-                        var mapOptions = {
-                            center: new google.maps.LatLng(53.351599, -6.332696),
-                            zoom: 10,
-                            mapTypeId: google.maps.MapTypeId.HYBRID
-                        }
-                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-                    }
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8UbuB1m2r3G4ZQ5SirWFH9HqVOZyqeJ0&callback=myMap"></script>
+                <dl>
+                    <dt>John
+                        <dd>01-555 1511</dd>
+                    </dt>
+                    <dt>Alan
+                        <dd>01-555 1512</dd>
+                    </dt>
+                    <dt>Sophie
+                        <dd>01-555 1513</dd>
+                    </dt>
+                </dl>
 
             </div>
         </div>
+        <div class="container col-md-12 contact-page">
+            <div class="row col-md-5 col-sm-5 contact-icon"><span class="glyphicon glyphicon-envelope">...</span></div>
+            <div class="row col-md-5 col-sm-5 contact-list">
+                <dl>
+                    <dt>Teresa
+                        <dd>oneillfv1@gmail.com</dd>
+                    </dt>
+                    <dt>David
+                        <dd>oneillfv2@gmail.com</dd>
+                    </dt>
+                    <dt>Simon
+                        <dd>oneillfv3@gmail.com</dd>
+                    </dt>
+
+                </dl>
+            </div>
+        </div>
+        <div class="container col-md-12 contact-page">
+            <div class="row col-md-5 col-sm-5 contact-icon"><span class="glyphicon glyphicon-time">...</span></div>
+            <div class="row col-md-5 col-sm-5 contact-list">
+                <dl>
+                    <dt>Monday-Thursday
+                        <dd>04:00 - 12:00</dd>
+                    </dt>
+                    <dt>Friday
+                        <dd>04:00 - 14:00</dd>
+                    </dt>
+                    <dt>Saturday Sunday Bank Holidays
+                        <dd>Closed</dd>
+                    </dt>
+
+                </dl>
+            </div>
+        </div>
+
+
+
     </section>
 
     <footer class="container-fluid">
