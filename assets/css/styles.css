@@ -140,8 +140,8 @@ td {
 }
 
 .contact-page {
-    margin:10px;
-    padding:10px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .contact-icon {
@@ -152,12 +152,60 @@ td {
     color: #e18515;
 }
 
-.contact-list  {
+.contact-list {
     font-size: 20px;
     margin: 10px;
     padding: 10px;
-    text-align: center; 
+    text-align: center;
 }
+
+.about-leaf {
+    margin:0;
+    padding:0;
+}
+
+.glyphicon-leaf,
+.glyphicon-apple,
+.glyphicon-pencil{
+    font-size: 50px;
+    text-align: center; 
+    margin: 15px;
+    padding: 10px;
+    float: none;
+}
+
+.glyphicon-apple {
+    color: #aa0d0d;
+}
+
+.glyphicon-leaf {
+    color: #12cc1e;
+}
+
+.about-us {
+    word-wrap: normal;
+    padding: 10px;
+    margin: 10px;
+}
+
+.about-us p {
+    margin: 0;
+    padding: 0;
+}
+
+.about-comment {
+    width: 60%;
+    height:40%;
+    margin: 20px 20px 20px 35px;
+    padding: 10px;
+}
+
+.about-video {
+    background-color: transparent;
+    padding: 0;
+    margin-left: 35px;
+}
+
 
 
 
@@ -313,11 +361,6 @@ table {
 .carousel-offers {
     margin-bottom: 25px;
 }
-
-
-
-
-
 
 
 /*------------------------ google map */
