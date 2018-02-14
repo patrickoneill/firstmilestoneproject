@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
 
-    <title>Orders</title>
+    <title>Contacts</title>
 </head>
 
 <body>
@@ -82,6 +82,11 @@
             <h1>Contact Us @</h1>
             <h2>We're here to help</h2>
         </div>
+        <div class="container">
+            <div class="row col-md-12">
+                <hr/>
+            </div>
+        </div>
         <div class="container col-md-12 contact-page">
             <div class="row col-md-5 col-sm-5 contact-icon"><span class="glyphicon glyphicon-earphone">...</span></div>
             <div class="row col-md-5 col-sm-5 contact-list">
@@ -97,7 +102,11 @@
                         <dd>01-555 1513</dd>
                     </dt>
                 </dl>
-
+            </div>
+        </div>
+        <div class="container">
+            <div class="row col-md-12">
+                <hr/>
             </div>
         </div>
         <div class="container col-md-12 contact-page">
@@ -117,6 +126,11 @@
                 </dl>
             </div>
         </div>
+        <div class="container">
+            <div class="row col-md-12">
+                <hr/>
+            </div>
+        </div>
         <div class="container col-md-12 contact-page">
             <div class="row col-md-5 col-sm-5 contact-icon"><span class="glyphicon glyphicon-time">...</span></div>
             <div class="row col-md-5 col-sm-5 contact-list">
@@ -132,6 +146,32 @@
                     </dt>
 
                 </dl>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row col-md-12">
+                <hr/>
+            </div>
+        </div>
+        <div class="container col-md-12 contact-page">
+            <div class="row col-md-5 col-sm-5 contact-icon"><span class="glyphicon glyphicon-map-marker">...</span></div>
+            <h3 class="contact-list"><strong>Find us here</strong></h3>
+
+            <div class="row col-md-5 col-sm-5 contact-list">
+                <div class="google-map2 col-md-5" id="map"></div>
+
+                <script>
+                    function myMap() {
+                        var mapOptions = {
+                            center: new google.maps.LatLng(53.351599, -6.332696),
+                            zoom: 10,
+                            mapTypeId: google.maps.MapTypeId.HYBRID
+                        }
+                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8UbuB1m2r3G4ZQ5SirWFH9HqVOZyqeJ0&callback=myMap"></script>
+
             </div>
         </div>
 
