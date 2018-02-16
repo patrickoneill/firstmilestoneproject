@@ -79,6 +79,9 @@ h3 {
     margin-top: 12px;
 }
 
+.searchbar-button {
+    color: red;
+}
 
 
 /*------------------------ alerts */
@@ -214,7 +217,6 @@ td {
     background-color: #759cc7;
     border-radius: 20px;
 }
-
 
 .user-comments {
     font-size: inherit;
