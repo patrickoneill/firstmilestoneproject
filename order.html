@@ -17,13 +17,13 @@
 
     <header class="container-fluid bg-color-logo">
         <div class="row logo-heading">
-            <a href="index.html logo">
+            <a href="index.html">
                 <div class="col-md-6 col-sm-12 logo"></div>
             </a>
             <!-- Login for website -->
             <div class="col-md-3 hidden-sm hidden-xs bg-color-header-log section-column">
                 <div class="row">
-                    <h2 class="user">Already have an account?</h2>
+                    <h2 class="user">Login Now</h2>
                     <form class="login">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -40,9 +40,10 @@
             <!-- Sign up for the web page -->
             <div class="col-md-3 hidden-sm hidden-xs bg-color-header-signin section-column-2 ">
                 <h3 class="create-account">Create An Account
-                    <p class="small">First Delivery Free...</p>
+                    <p class="small">First Delivery Free</p>
                 </h3>
-                <button class="btn btn-info uppercase">Sign up</button>
+                <button class="btn btn-info uppercase">
+                    <a href="signinLogin.html">Sign up</a></button>
             </div>
         </div>
 
@@ -65,13 +66,23 @@
                         <li><a href="order.html">Order </a></li>
                         <li><a href="contact.html">Contact </a></li>
                         <li><a href="about.html">About Us </a></li>
+                        <li class="dropdown navbar-right ">
+                            <button class="dropdown-toggle searchbar-button" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-search "></span></button>
+                            <ul class="dropdown-menu ">
+                                <li>
+                                    <form class="navbar-form" role="search">
+                                        <div class="form-group">
+                                            <input class="seacrhbar new-searchbar" type="text" placeholder="Search..">
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
 
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group">
-                            <input class="seacrhbar" type="text" placeholder="Search..">
-                        </div>
-                    </form>
+
+
                 </div>
             </div>
         </nav>
@@ -83,9 +94,6 @@
         <!-- alert to special offers or requirements -->
         <div class="alert alert-danger">
             <strong>Important!</strong> All orders must be placed before 10:30am for same day delivery.
-        </div>
-        <div>
-            <button class="btn btn-danger uppercase ">Submit Order</button>
         </div>
 
 
@@ -1175,7 +1183,7 @@
                         <th class="quantity">Quantity</th>
                     </tr>
                     <tr>
-                        <td>Fruit Hamper
+                        <td id="fruithamper">Fruit Hamper
                             <i class="radio-selection">
                                 <label class="checkbox-inline"><input type="checkbox" value="">Small</label>
                                 <label class="checkbox-inline"><input type="checkbox" value="">Medium</label>
@@ -1208,7 +1216,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Exotic Fruit Hamper
+                        <td id="exotichamper">Exotic Fruit Hamper
                             <i class="radio-selection">
                                 <label class="checkbox-inline"><input type="checkbox" value="">Small</label>
                                 <label class="checkbox-inline"><input type="checkbox" value="">Medium</label>
@@ -1333,26 +1341,39 @@
 
 
         <div class="container ">
-            <div class="row col-md-5 new-lines">
-                <h2>Deliveries</h2>
-                <p class="new">Deliveries are bases on distance outside the city center</p>
-                <ul style="list-style-type:circle">
-                    <li> deliveries in the city center €5</li>
-                    <li> deliveries 5k-10k outside city center €9.50</li>
-                    <li> deliveries outside Dublin €15</li>
-                </ul>
-                <input type="text" name="eircode" placeholder="Enter Eircode" />
-                <button class="eircode">Find</button>
+            <div class="plan row col-md-5 new-lines">
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend id="deliverydetails">Delivery Details</legend>
+                        <p>
+                            <label class="title-deliver" for="name">Your Name:</label>
+                            <input class="deliver-address" type="text" name="name" id="name" /><br/>
+                            <label class="title-deliver" for="address">Address:</label>
+                            <input class="deliver-address" type="text" name="address" id="address" /><br/>
+                            <label class="title-deliver" for="number">Contact Number:</label>
+                            <input class="deliver-address" type="text" name="number" id="number" /><br/>
+                        </p>
+                        <p>
+                            <label for="location">Delivery Area:</label>
+                            <select name="location" id="location">
+                                <option value="city-center">Dublin 1 - Dublin 16 ~ €6.5</option>
+                                <option value="subburbs">Dublin 17 - Dublin 24 ~ €9</option>
+                                <option value="country">Outside Dublin ~ €14</option>
+                            </select>
+                        </p>
+                        <div class="submit"><input type="submit" value="Order"></div>
 
+                    </fieldset>
+                </form>
             </div>
-            <div class="google-map col-md-5 hidden-xs" id="map"></div>
+            <div class="google-map col-md-5" id="map"></div>
 
             <script>
                 function myMap() {
                     var mapOptions = {
                         center: new google.maps.LatLng(53.351599, -6.332696),
                         zoom: 10,
-                        mapTypeId: google.maps.MapTypeId.HYBRID
+                        mapTypeId: google.maps.MapTypeId.TERRAIN
                     }
                     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
                 }

@@ -38,8 +38,8 @@ footer {
 }
 
 .input-group {
-    text-align: justify;
     text-align: center;
+    width: 100%;
     margin: 3px;
     padding: 5px;
 }
@@ -79,9 +79,20 @@ h3 {
     margin-top: 12px;
 }
 
+
 .searchbar-button {
-    color: red;
+    color: #676767;
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    margin-left: 10px;
 }
+
+.navbar-form {
+    padding: 10px 15px;
+    margin: 8px 0 0 0;
+}
+
 
 
 /*------------------------ alerts */
@@ -137,10 +148,38 @@ td {
     margin-right: 10px;
 }
 
-.new-lines {
-    margin: 20px;
-    padding: 20px;
+fieldset {
+    width: 350px;
+    margin-top: 20px;
+    border: none;
+    line-height: 1.6em;
 }
+
+.deliver-address {
+     width: 120px;
+     border: 1px solid #e18515;
+     margin: 3px;
+     padding: 2px;
+     outline: none;
+     border-radius: 10px;
+}
+
+#location {
+    border-radius: 10px;
+}
+
+.deliver-address:focus,
+.deliver-address:hover {
+    border: 1px solid orange;
+}
+
+.title-deliver {
+    float: left;
+    width: 160px;
+    clear: left;
+}
+
+
 
 .contact-page {
     margin: 10px;
@@ -384,6 +423,13 @@ table {
 .carousel-caption {
     font-family: "Roboto", sans-serif;
     font-variant: small-caps;
+    color: #e18515;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    background-color: hsla(0, 100%, 100%, 0.75);
+    border-radius: 10px;
+    
 }
 
 /*------------------------ carousel */
@@ -399,22 +445,11 @@ table {
     margin-bottom: 20px;
 }
 
-.google-map {
-    width: 350px;
-    height: 275px;
-    padding: 20px;
-    margin: 20px;
-}
-
-.google-map2 {
+#map {
     width: 300px;
-    height: 200px;
-    margin-left: 120px;
-}
-
-@media (min-width:767px) {
-    google-map {
-        width: 50%;
-        height: 50%;
-    }
+    height: 240px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }

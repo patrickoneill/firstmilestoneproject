@@ -16,13 +16,13 @@
 
     <header class="container-fluid bg-color-logo">
         <div class="row logo-heading">
-            <a href="index.html logo">
+            <a href="index.html">
                 <div class="col-md-6 col-sm-12 logo"></div>
             </a>
             <!-- Login for website -->
             <div class="col-md-3 hidden-sm hidden-xs bg-color-header-log section-column">
                 <div class="row">
-                    <h2 class="user">Already have an account?</h2>
+                    <h2 class="user">Login Now</h2>
                     <form class="login">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -39,9 +39,10 @@
             <!-- Sign up for the web page -->
             <div class="col-md-3 hidden-sm hidden-xs bg-color-header-signin section-column-2 ">
                 <h3 class="create-account">Create An Account
-                    <p class="small">First Delivery Free...</p>
+                    <p class="small">First Delivery Free</p>
                 </h3>
-                <button class="btn btn-info uppercase">Sign up</button>
+                <button class="btn btn-info uppercase">
+                    <a href="signinLogin.html">Sign up</a></button>
             </div>
         </div>
 
@@ -64,12 +65,23 @@
                         <li><a href="order.html">Order </a></li>
                         <li><a href="contact.html">Contact </a></li>
                         <li><a href="about.html">About Us </a></li>
+                        <li class="dropdown navbar-right ">
+                            <button class="dropdown-toggle searchbar-button" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-search "></span></button>
+                            <ul class="dropdown-menu ">
+                                <li>
+                                    <form class="navbar-form" role="search">
+                                        <div class="form-group">
+                                            <input class="seacrhbar new-searchbar" type="text" placeholder="Search..">
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group">
-                            <input class="seacrhbar" type="text" placeholder="Search..">
-                        </div>
-                    </form>
+
+
+
                 </div>
             </div>
         </nav>
@@ -79,8 +91,8 @@
 
     <section class="container-fluid bg-color-section-heading">
         <div class="row col-md-12 plan">
-            <h1>Contact Us @</h1>
-            <h2>We're here to help</h2>
+            <h1>We're here to help</h1>
+            <h2>Contact Us @</h2>
         </div>
         <div class="container">
             <div class="row col-md-12">
@@ -155,28 +167,16 @@
         </div>
         <div class="container col-md-12 contact-page">
             <div class="row col-md-5 col-sm-5 contact-icon"><span class="glyphicon glyphicon-map-marker">...</span></div>
-            <h3 class="contact-list"><strong>Find us here</strong></h3>
-
             <div class="row col-md-5 col-sm-5 contact-list">
-                <div class="google-map2 col-md-5" id="map"></div>
-
-                <script>
-                    function myMap() {
-                        var mapOptions = {
-                            center: new google.maps.LatLng(53.351599, -6.332696),
-                            zoom: 10,
-                            mapTypeId: google.maps.MapTypeId.HYBRID
-                        }
-                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-                    }
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8UbuB1m2r3G4ZQ5SirWFH9HqVOZyqeJ0&callback=myMap"></script>
-
+                <dl>
+                    <dt>Find Us Here..
+                    <dd>Wellington Rd,</dd>
+                    <dd>Phoenix Park,</dd>
+                    <dd>Co. Dublin</dd>
+                    </dt>
+                </dl>
             </div>
         </div>
-
-
-
     </section>
 
     <footer class="container-fluid">
