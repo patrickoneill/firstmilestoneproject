@@ -179,8 +179,6 @@ fieldset {
     clear: left;
 }
 
-
-
 .contact-page {
     margin: 10px;
     padding: 10px;
@@ -235,7 +233,7 @@ fieldset {
 
 .about-comment {
     width: 60%;
-    height: 40%;
+    height: 100%;
     margin: 20px 20px 20px 35px;
     padding: 10px;
 }
@@ -250,7 +248,7 @@ fieldset {
     text-align: center;
     margin: 10px;
     padding: 5px;
-    width: 20%;
+    width: 100%;
     height: 100%;
     color: #3333cc;
     background-color: #759cc7;
@@ -258,22 +256,27 @@ fieldset {
 }
 
 .user-comments {
+    text-align: left;
     font-size: inherit;
     margin: 10px;
+    border: 1px solid #e18515;
+    border-radius: 10px;
     padding: 5px;
-    width: 70%;
+    width: 100%;
     height: 100%;
-    background-color: #759cc7;
-    border-radius: 15px;
 }
 
 .comment-insets {
     text-align: right;
-    font-size: 20px;
+    font-size: inherit;
 }
 
 .user-comments dl {
     margin-bottom: 0;
+}
+
+.review-section {
+    display: inline;
 }
 
 
@@ -453,3 +456,7 @@ table {
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
+/*------------------------ media quierys */
+
+@media
