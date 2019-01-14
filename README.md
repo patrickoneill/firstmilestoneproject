@@ -1,5 +1,5 @@
-# firstmilestoneproject
-<h3> Reasons and target audience </h3>
+# First Milestone Project
+## Reasons and target audience
 
 This project is formed around an ordering website for fresh food delievery
 It is aimed towards all consumers from business to office to home delivery
