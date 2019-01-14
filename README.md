@@ -89,3 +89,12 @@ Through them I have come across issues with layout and some of the functions
 - 
 
 <h5>Wireframes<h5>
+![dsc_0298](https://user-images.githubusercontent.com/33999607/51115959-9d069900-1801-11e9-9e01-d4be6014dc46.JPG)
+    
+![dsc_0299](https://user-images.githubusercontent.com/33999607/51116002-b90a3a80-1801-11e9-9007-a17264b78555.JPG)
+
+![dsc_0300](https://user-images.githubusercontent.com/33999607/51116011-bd365800-1801-11e9-99de-5ae790c008a4.JPG)
+
+![dsc_0301](https://user-images.githubusercontent.com/33999607/51116023-c6272980-1801-11e9-9965-4a00bcd6f934.JPG)
+
+![dsc_0303](https://user-images.githubusercontent.com/33999607/51116029-ca534700-1801-11e9-9438-07fa2c5b9da8.JPG)
