@@ -9,6 +9,7 @@ I am alway in touch with one local supplier that doesnt have a web presence but 
 <h4>Website</h4>
 In creating this project I have made a 5 page website with a downloadable pdf file for off line ordering
 
+Here is a link to the finished product <a href="https://patrickoneill.github.io/firstmilestoneproject/">Click Me!!</a>
 <h4>Overall Layout</h4>
 <h5>Header section</h5>
 The overall layout of the pages consist of an image for the business which is also a link to the home page for users to return to at any time.
