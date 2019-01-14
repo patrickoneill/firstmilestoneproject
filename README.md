@@ -11,6 +11,8 @@ In creating this project I have made a 5 page website with a downloadable pdf fi
 
 Here is a link to the finished product <a href="https://patrickoneill.github.io/firstmilestoneproject/">Click Me!!</a>
 
+Deployed the project on github pages
+
 Within this project the technologies used:
 - HTML5
 - CSS3
@@ -86,9 +88,8 @@ Through them I have come across issues with layout and some of the functions
     - Overall the layout and the information on the page is good, no prices on the site is only thing that is missing.
 - Feedback on carousel 
     - Add a function when image is clicked that it brings you to the product or the page.
-- 
 
-<h5>Wireframes<h5>
+<h5>Wireframes</h5>
 
 ![dsc_0298](https://user-images.githubusercontent.com/33999607/51115959-9d069900-1801-11e9-9e01-d4be6014dc46.JPG)
 
