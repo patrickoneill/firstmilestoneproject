@@ -1368,17 +1368,6 @@
             </div>
             <div class="google-map col-md-5" id="map"></div>
 
-            <script>
-                function myMap() {
-                    var mapOptions = {
-                        center: new google.maps.LatLng(53.351599, -6.332696),
-                        zoom: 10,
-                        mapTypeId: google.maps.MapTypeId.TERRAIN
-                    }
-                    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-                }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8UbuB1m2r3G4ZQ5SirWFH9HqVOZyqeJ0&callback=myMap"></script>
         </div>
 
     </section>
@@ -1420,12 +1409,14 @@
         </div>
 
     </footer>
-
+    <!--JS fiile-->
+    <script type="text/javascript" src="assets/js/map.js"></script>
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Java link from Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <!--GoogleMaps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8UbuB1m2r3G4ZQ5SirWFH9HqVOZyqeJ0&callback=myMap"></script>
 
 </body>
 
